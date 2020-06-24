@@ -5,8 +5,8 @@ using namespace std;
 
 void minmax(int *dizi, int boyut) {
 
-	// for döngüleriyle aynı fonksiyon içinde dizinin minimum ve maksimum değerleri hesaplanıyor //
-	// Sonrasında minimum ve maksimum değerleri ekrana yazdırılıyor //
+	// for dÃ¶ngÃ¼leriyle aynÄ± fonksiyon iÃ§inde dizinin minimum ve maksimum deÄŸerleri hesaplanÄ±yor //
+	// SonrasÄ±nda minimum ve maksimum deÄŸerleri ekrana yazdÄ±rÄ±lÄ±yor //
 	// O(2(boyut-1))
 	
 	int i = 0;
@@ -48,7 +48,7 @@ void minmax(int *dizi, int boyut) {
 void enkucuk(int *dizi, int boyut, int k)
 {
 	
-	// Dizi bubble sort algoritmasına göre küçükten büyüğe büyük sayı geçici bir değerle bir ileriye alınarak sıralanıyor //
+	// Dizi bubble sort algoritmasÄ±na gÃ¶re kÃ¼Ã§Ã¼kten bÃ¼yÃ¼ÄŸe bÃ¼yÃ¼k sayÄ± geÃ§ici bir deÄŸerle bir ileriye alÄ±narak sÄ±ralanÄ±yor //
 	// O((boyut-i-1)^(boyut-2)
 	int i, j, temp;
 	
@@ -67,12 +67,12 @@ void enkucuk(int *dizi, int boyut, int k)
 		}
 	}
 
-	// Kullanıcıdan kaçıncı sıradaki değer isteniyorsa o sayı alınıyor. //
+	// KullanÄ±cÄ±dan kaÃ§Ä±ncÄ± sÄ±radaki deÄŸer isteniyorsa o sayÄ± alÄ±nÄ±yor. //
 
 	cout << "k degerini giriniz: ";
 	cin >> k;
 	
-	// O sayı ekrana yazdırılıyor. //
+	// O sayÄ± ekrana yazdÄ±rÄ±lÄ±yor. //
 	
 	cout << endl;
 	cout << "En kucuk " << k << ". deger :" << dizi[k - 1] << endl;
@@ -81,7 +81,7 @@ void enkucuk(int *dizi, int boyut, int k)
 
 void enbuyuk(int *dizi, int boyut, int k)
 {
-	// Dizi bubble sort algoritmasına göre küçükten büyüğe büyük sayı geçici bir değerle bir ileriye alınarak sıralanıyor //
+	// Dizi bubble sort algoritmasÄ±na gÃ¶re kÃ¼Ã§Ã¼kten bÃ¼yÃ¼ÄŸe bÃ¼yÃ¼k sayÄ± geÃ§ici bir deÄŸerle bir ileriye alÄ±narak sÄ±ralanÄ±yor //
 	// O((boyut-i-1)^(boyut-2)
 	int i, j, temp;
 	
@@ -98,12 +98,12 @@ void enbuyuk(int *dizi, int boyut, int k)
 		}
 	}
 
-	// Kullanıcıdan kaçıncı sıradaki değer isteniyorsa o sayı alınıyor. //
+	// KullanÄ±cÄ±dan kaÃ§Ä±ncÄ± sÄ±radaki deÄŸer isteniyorsa o sayÄ± alÄ±nÄ±yor. //
 	
 	cout << "k degerini giriniz: ";
 	cin >> k;
 	
-	// O sayı ekrana yazdırılıyor. //
+	// O sayÄ± ekrana yazdÄ±rÄ±lÄ±yor. //
 	
 	cout << endl;
 	cout << "En buyuk " << k << ". deger :" << dizi[boyut-k] << endl;
@@ -114,14 +114,14 @@ void enbuyuk(int *dizi, int boyut, int k)
 
 int main() {
 
-	// Dizinin boyut sayısı, sayaç olan i, sıralamada kullanılacak k ve secenek icin a tanımlanıyor. //
+	// Dizinin boyut sayÄ±sÄ±, sayaÃ§ olan i, sÄ±ralamada kullanÄ±lacak k ve secenek icin a tanÄ±mlanÄ±yor. //
 	
 	int boyut;
 	int i;
 	int k = 0;
 	char a;
 
-	// Dizinin boyut sayısı kullanıcıdan alınıyor ve dinamik dizi oluşturuluyor. //
+	// Dizinin boyut sayÄ±sÄ± kullanÄ±cÄ±dan alÄ±nÄ±yor ve dinamik dizi oluÅŸturuluyor. //
 	
 	cout << "Dizi boyutunu giriniz." << endl;
 	cin >> boyut;
@@ -129,7 +129,7 @@ int main() {
 	int* dizi = new int[boyut];
 
 
-	// Dizinin değerleri for döngüsüyle kullanıcıdan alınıyor. //
+	// Dizinin deÄŸerleri for dÃ¶ngÃ¼sÃ¼yle kullanÄ±cÄ±dan alÄ±nÄ±yor. //
 	
 	for (i = 0; i < boyut; i++) {
 
@@ -139,7 +139,7 @@ int main() {
 
 	
 	
-	// Dizinin değerleri for döngüsüyle yazdırılıyor. //
+	// Dizinin deÄŸerleri for dÃ¶ngÃ¼sÃ¼yle yazdÄ±rÄ±lÄ±yor. //
 
 
 	cout << "dizi[" << boyut-1 << "] :  {";
@@ -160,8 +160,8 @@ int main() {
 
 
 
-	// Yapılacak işlemler için kullanıcıdan seçenek alınıyor. //
-	// Seçilen seçeneğe göre fonksiyon çağırılıyor. //
+	// YapÄ±lacak iÅŸlemler iÃ§in kullanÄ±cÄ±dan seÃ§enek alÄ±nÄ±yor. //
+	// SeÃ§ilen seÃ§eneÄŸe gÃ¶re fonksiyon Ã§aÄŸÄ±rÄ±lÄ±yor. //
 	
 	cout << "Hangi secenek ? (a: min/max, b: k. en buyuk, c: k. en kucuk)" << endl ;
 	cin >> a;
